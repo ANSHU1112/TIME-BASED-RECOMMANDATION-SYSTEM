@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="ratingDescription <= 41.5\nsamples = 800\nvalue = [181, 205, 414]\nclass = 3", fillcolor="#8139e55a"] ;
+1 [label="tpol <= 0.454\nsamples = 232\nvalue = [0, 192, 40]\nclass = 2", fillcolor="#39e581ca"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="samples = 137\nvalue = [0, 137, 0]\nclass = 2", fillcolor="#39e581ff"] ;
+1 -> 2 ;
+3 [label="ratingDescription <= 22.5\nsamples = 95\nvalue = [0, 55, 40]\nclass = 2", fillcolor="#39e58146"] ;
+1 -> 3 ;
+4 [label="samples = 55\nvalue = [0, 55, 0]\nclass = 2", fillcolor="#39e581ff"] ;
+3 -> 4 ;
+5 [label="samples = 40\nvalue = [0, 0, 40]\nclass = 3", fillcolor="#8139e5ff"] ;
+3 -> 5 ;
+6 [label="ratingDescription <= 95.0\nsamples = 568\nvalue = [181, 13, 374]\nclass = 3", fillcolor="#8139e57f"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="tpol <= 0.525\nsamples = 422\nvalue = [48, 0, 374]\nclass = 3", fillcolor="#8139e5de"] ;
+6 -> 7 ;
+8 [label="samples = 359\nvalue = [0, 0, 359]\nclass = 3", fillcolor="#8139e5ff"] ;
+7 -> 8 ;
+9 [label="ratingDescription <= 65.0\nsamples = 63\nvalue = [48, 0, 15]\nclass = 1", fillcolor="#e58139af"] ;
+7 -> 9 ;
+10 [label="samples = 15\nvalue = [0, 0, 15]\nclass = 3", fillcolor="#8139e5ff"] ;
+9 -> 10 ;
+11 [label="samples = 48\nvalue = [48, 0, 0]\nclass = 1", fillcolor="#e58139ff"] ;
+9 -> 11 ;
+12 [label="ratingDescription <= 117.0\nsamples = 146\nvalue = [133, 13, 0]\nclass = 1", fillcolor="#e58139e6"] ;
+6 -> 12 ;
+13 [label="samples = 133\nvalue = [133, 0, 0]\nclass = 1", fillcolor="#e58139ff"] ;
+12 -> 13 ;
+14 [label="samples = 13\nvalue = [0, 13, 0]\nclass = 2", fillcolor="#39e581ff"] ;
+12 -> 14 ;
+}
